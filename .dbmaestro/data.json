@@ -35,7 +35,26 @@
         "ProjectId": "0b0d72ca-06f3-4f0f-8e3f-2ccb83c2585a",
         "ProjectName": "mysql_test",
         "DBTypeName": "MySQL",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "a6dc5239-de62-4838-ab06-72af724b85f2",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "d608e260-a006-45fc-bff7-a114a367a80b",
+                "DatabaseAliasName": "db1_mysql",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/roylauzon/db1_mysql.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -55,7 +74,31 @@
       "UserData": [
         {
           "UserName": "roylauzon",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "d608e260-a006-45fc-bff7-a114a367a80b",
+              "DatabaseAliasName": "db1_mysql",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "MySQL",
+                    "host": "127.0.0.1",
+                    "port": "3306",
+                    "security": "Prefered",
+                    "username": "root",
+                    "dbName": "roy",
+                    "Password": "qrE4JauJd0gM7CQ0IggpFA=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "roylauzon",
+                "Password": "sB2Z+Cv9yELTbFQWiOKH08s5CDTHh4H7FElza4/SYBJQH1/b5+RTPSzdaGD6ymmh"
+              }
+            }
+          ]
         }
       ],
       "DatabasesStaticDataObjects": null
