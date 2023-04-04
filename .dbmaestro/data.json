@@ -70,7 +70,20 @@
           ]
         }
       ],
-      "DatabasesStaticDataObjects": null
+      "DatabasesStaticDataObjects": [
+        {
+          "DatabaseId": "d62e6ba1-464f-4262-9b84-4e5e792ba0a6",
+          "DatabaseAliasName": "db1",
+          "StaticDataObjects": [
+            {
+              "UniqueIndex": "PK_Table_3",
+              "schema": "dbo",
+              "name": "Table_3",
+              "type": "Table"
+            }
+          ]
+        }
+      ]
     },
     {
       "GlobalData": {
