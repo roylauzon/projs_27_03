@@ -150,7 +150,26 @@
         "ProjectId": "9f04491a-f02d-47b2-89e6-eb792d5ea9d0",
         "ProjectName": "mysql_57",
         "DBTypeName": "MySQL",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "68413ef0-0562-4f30-a322-bb9e9f79c4ae",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "e3421498-4985-4092-b99e-a11a417cd01a",
+                "DatabaseAliasName": "db1_my57",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/roylauzon/db1_mysql_57.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -170,11 +189,36 @@
       "UserData": [
         {
           "UserName": "roylauzon",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "e3421498-4985-4092-b99e-a11a417cd01a",
+              "DatabaseAliasName": "db1_my57",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "MySQL",
+                    "host": "127.0.0.1",
+                    "port": "3307",
+                    "security": "Prefered",
+                    "username": "root",
+                    "dbName": "roy57",
+                    "Password": "qrE4JauJd0gM7CQ0IggpFA=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "roylauzon",
+                "Password": "sB2Z+Cv9yELTbFQWiOKH08s5CDTHh4H7FElza4/SYBJQH1/b5+RTPSzdaGD6ymmh"
+              }
+            }
+          ]
         }
       ],
       "DatabasesStaticDataObjects": null
     }
   ],
-  "GlobalConfigurations": null
+  "GlobalConfigurations": null,
+  "RepositoryConfiguration": null
 }
