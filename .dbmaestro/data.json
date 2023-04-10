@@ -234,6 +234,9 @@
   ],
   "GlobalConfigurations": null,
   "RepositoryConfiguration": {
-    "MinimumRequiredVersion": "22.4.0.10477"
+    "MinimumRequiredVersion": "22.4.0.10479"
+  },
+  "GeneralConfigurations": {
+    "SupportMultiDatabasePerProject": true
   }
 }
